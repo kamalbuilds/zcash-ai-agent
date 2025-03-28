@@ -1,11 +1,11 @@
-*.ts
-dist
-!index.ts
-!character.ts
-.env
-node_modules
 dist/
-
+node_modules/
+.env
 db.sqlite
 .idea
 .tee-cloud
+
+# Keep only compiled files out of git, not source
+# *.ts
+# !index.ts
+# !character.ts
