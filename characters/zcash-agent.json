@@ -1,7 +1,6 @@
 {
   "name": "ZEC Agent",
   "username": "zec-agent",
-  "modelProvider": "openai",
   "settings": {
     "secrets": {
       "NEAR_ADDRESS": "example.near",
