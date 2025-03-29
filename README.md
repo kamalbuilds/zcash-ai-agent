@@ -9,6 +9,9 @@ This plugin enables Eliza-based autonomous agents to manage ZEC balances, trade 
 - Deposit tokens to the intents contract for trading
 - Check token balances
 
+## Demo Video 
+
+
 ## Installation
 
 To use this plugin in your Eliza project:
