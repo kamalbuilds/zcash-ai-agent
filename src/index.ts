@@ -23,7 +23,7 @@ import {
   parseArguments,
 } from "./config/index.ts";
 import { initializeDatabase } from "./database/index.ts";
-import nearPlugin from "./plugins/plugin-near/src/index.ts";
+// import nearPlugin from "./plugins/plugin-near/src/index.ts";
 import zcashPlugin from "./plugins/plugin-zcash/src/index.ts";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -58,7 +58,7 @@ export function createAgent(
     evaluators: [],
     character,
     plugins: [
-      nearPlugin,
+      // nearPlugin,
       zcashPlugin,
       bootstrapPlugin,
       nodePlugin,

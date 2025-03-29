@@ -24,7 +24,8 @@ export const character: Character = {
             NEAR_RPC_URL: process.env.NEAR_RPC_URL || "https://rpc.mainnet.near.org"
         }
     },
-    // Only load the Zcash plugin for now until NEAR plugin is fixed
+    // Only include the Zcash plugin for now
     plugins: [
+        "./src/plugins/plugin-zcash/dist/index.js"
     ]
 };

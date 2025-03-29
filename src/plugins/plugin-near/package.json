@@ -9,7 +9,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "rm -rf dist && tsup --format esm,cjs --dts",
+        "build": "rm -rf dist && tsc",
         "test": "vitest run",
         "test:watch": "vitest",
         "prepublishOnly": "pnpm build"
