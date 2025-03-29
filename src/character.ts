@@ -6,9 +6,7 @@ import * as path from 'path';
 const zcashAgentPath = path.join(process.cwd(), 'characters', 'zcash-agent.json');
 const zcashAgentConfig = JSON.parse(fs.readFileSync(zcashAgentPath, 'utf8'));
 
-import zcashPlugin from './plugins/plugin-zcash/dist/index.js';
-import nearPlugin from './plugins/plugin-near/dist/index.js';
-
+// Use the ZEC Agent configuration with some defaults
 export const character: Character = {
     ...defaultCharacter,
     name: "ZcashAgent",
@@ -26,8 +24,7 @@ export const character: Character = {
             NEAR_RPC_URL: process.env.NEAR_RPC_URL || "https://rpc.mainnet.near.org"
         }
     },
-    // Ensure both plugins are loaded
+    // Only load the Zcash plugin for now until NEAR plugin is fixed
     plugins: [
-        zcashPlugin, nearPlugin
     ]
 };
